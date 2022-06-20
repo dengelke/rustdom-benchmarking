@@ -1,0 +1,27 @@
+{
+  "name": "rustdom-benchmarking",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "jsdom": "DOM=JSDOM node bench.js",
+    "linkedom": "DOM=LINKEDOM node bench.js",
+    "rustdom": "DOM=RUSTDOM node bench.js",
+    "start": "npm run jsdom && npm run linkedom && npm run rustdom"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dengelke/rustdom-benchmarking.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dengelke/rustdom-benchmarking/issues"
+  },
+  "homepage": "https://github.com/dengelke/rustdom-benchmarking#readme",
+  "dependencies": {
+    "jsdom": "^19.0.0",
+    "linkedom": "^0.14.9",
+    "rustdom": "^0.3.1"
+  }
+}
